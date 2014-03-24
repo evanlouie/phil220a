@@ -1,0 +1,3 @@
+7.1.1.18681wnds:Windows 76.1SntFC1395649559021D1395652331750S83998Tet(a) & Small(a)~(~(Tet(a)|Tet(a))|~(Small(a)|Small(a)))Tet(a) $ Small(a)~(~(~(Tet(a)|Tet(a))|Small(a))|~(~(Tet(a)|Tet(a))|Small(a)))     Tet(a) % Small(a)(~(~(Tet(a)|Tet(a))|~(Small(a)|Small(a))))|~(Tet(a)|Small(a))(Cube(b) & Cube(c)) $ (Small(b) % Small(c))
+; This one is long.  Tranlate the antecedant and 
+; consequent and then combine them using ~ and |.~(~(~(~(~(Cube(b)|Cube(b))|~(Cube(c)|Cube(c)))|~(~(Cube(b)|Cube(b))|~(Cube(c)|Cube(c))))|~(~(Small(b)|Small(b))|~(Small(c)|Small(c)))|~(Small(b)|Small(c)))|~(~(~(~(Cube(b)|Cube(b))|~(Cube(c)|Cube(c)))|~(~(Cube(b)|Cube(b))|~(Cube(c)|Cube(c))))|~(~(Small(b)|Small(b))|~(Small(c)|Small(c)))|~(Small(b)|Small(c))))s=114952;
