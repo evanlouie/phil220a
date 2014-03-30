@@ -1,0 +1,30 @@
+7.1.1.18681wnds:Windows 76.1SntFC1396179541891D1396179799728D1396179813486C1396180465816D1396180475553D1396180572470S1691420~@x (/y (x = y) $ x = d)
+; Do you see what this is trying to say about the 
+; world?  (Notice the names.) You can't express 
+; that in the blocks language.  Negate the whole 
+; sentence.@x @y (((Cube(x) & Cube(y)) & (x # y)) $ /z Between(z,x, y))
+
+; Now this sentence tries to make a reasonable 
+; claim.  Why is it false?  Play the game and see. 
+; Then fix it so it says what was intended.@x (Between(x, d, c) $ x = b)@x (/y Between(x, y, c) $ x = b)@x (/y Between(x, y, c) $ ~Large(x))@x (/y /z Between(x, y, z) $ ~Large(x))@x (/y /z Between(x, y, z) $ Tet(x))@x (~/y LeftOf(y, x) $ x = a)@x ((~/y LeftOf(y, x) & ~/y FrontOf(y, x)) $ x = a)@x (/y /z (Between(x, y, z) & Tet(y) & Tet(z)) 
+                   $ x = e)@x (/y /z (Between(x, y, z) & Cube(y) & Cube(z)) 
+                   $ x = b)@y (/x /z (Between(x, y, z) & x = b) $ 
+                 (y = a | y = c))@x @y ((Tet(x) & Small(x) & Tet(y) & Small(y))
+             $ x = y)
+; Do you see what this says?@x @y ((Dodec(x) & Small(x) & Dodec(y) & Small(y))
+             $ x = y)
+; If you understood the last one, you see why this is
+; true as well.@x (Dodec(x) $ x = b)
+; This may look like a dumb thing to say, but make
+; sure you understand it.  Why is it true?@x (Dodec(x) % x = b)
+; And do you see why this is false?  Under what 
+; circumstances would it be true?@x ((Tet(x) & Small(x)) % x = b)
+; This time, we got it right./y @x ((Tet(x) & Small(x)) % x = y)
+; Compare this with the previous sentence.  Do 
+; you understand what it says?  Play the game 
+; a couple times, committed to both true and false./y @x ((Cube(x) & Small(x)) % x = y)
+; Play the game here, too.  Do you see why you can't 
+; win when committed to true?/y @x ((Tet(x) & Large(x)) % x = y)
+; In this slot, write a sentence that says there's 
+; exactly one large tetrahedron.  Pattern it on 
+; sentence 18.s=313193;

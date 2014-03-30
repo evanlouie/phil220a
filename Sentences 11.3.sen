@@ -1,0 +1,19 @@
+7.1.1.18681wnds:Windows 76.1SntFC1396178575519D1396178983374S875730/x /y (Tet(x) & Larger(x, y))
+; This sentence and 2 say the same thing in 
+; different ways. /x (Tet(x) & /y Larger(x, y))/x /y (Cube(x) & Tet(y) & Larger(x, y))
+; This sentence and the next one say the
+; same thing in different ways. /x (Cube(x) & /y (Tet(y) & Larger(x, y)))/x /y (Tet(x) & Cube(y) & Larger(x, y))/x (Tet(x) & /y (Cube(y) & Larger(x, y)))/x /y (Dodec(x) & Tet(y) & Smaller(x, y))/x (Dodec(x) & /y (Tet(y) & Smaller(x, y)))/x /y /z Between(x, y, z)/x (Dodec(x) & /y /z Between(x, y, z))/x (Tet(x) & /y /z Between(x, y, z))/x /y /z (Tet(x) & Cube(y) & Between(x, y, z))/x @y (Dodec(x) $ ~Larger(x, y))
+; This sentence and the next say the same thing
+; in different ways.@x (Cube(x) $ /y Larger(x, y))@x @y ((Cube(x) & Dodec(y)) $ Larger(x, y))@x (Cube(x) $ @y (Dodec(y) $ Larger(x, y)))/x ((Cube(x) & Medium(x)) $ @y LeftOf(y, x))
+; Be sure to understand the difference between 
+; this sentence and the next one. @x ((Cube(x) & Medium(x)) $ @y (y # x $ 
+                                                   LeftOf(y, x)))/x ((Tet(x) & Small(x)) $ @y FrontOf(x, y))/x ((Tet(x) & Small(x)) $ @y (y # x $ FrontOf(x, y)))@x ((Tet(x) & Small(x)) $ @y ~FrontOf(y, x))@x @y (BackOf(x, y) $ ~FrontOf(x, y))/x /y (BackOf(x, y) & ~FrontOf(x, y))/x (Tet(x) & /y /z (Dodec(y) & Dodec(z) & 
+                              Between(x, y, z)))/x /y (Tet(x) | Tet(y) | /z (Dodec(z) & 
+                                            Between(z, x, y)))/x /y ((Cube(x) & Tet(y)) $ (FrontOf(x, y) | 
+                                              FrontOf(y, x)))@x @y ((Cube(x) & Tet(y)) $ (LeftOf(x, y) | 
+                                              LeftOf(y, x)))/x /y ((Cube(x) & Cube(y)) $ ~SameRow(x, y))
+; You may need to play the game to see why this 
+; has the truth value it does in Peano's World. 
+; Compare this with 29 and 30. @x @y [(Dodec(x) & Dodec(y)) $ SameSize(x, y)]/x /y [(Tet(x) & Tet(y)) $ ~SameSize(x, y)]
+; Be sure you understand why this comes out as 
+; it does in Peano's World.  s=345668;

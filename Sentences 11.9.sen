@@ -1,0 +1,10 @@
+7.1.1.18681wnds:Windows 76.1SntFC1396179005215D1396179174254C1396180334036D1396180414932S1305425/x @y ~Smaller(x, y)
+; Could this ever be true?@x (Dodec(x) $ /y Smaller(x, y))/x (Dodec(x) & ~@y Smaller(x, y))/y @x (Dodec(x) $ Smaller(x, y))
+; Try to say this in English.  It's hard to say it 
+; clearly and unambiguously./y @x (Dodec(x) $ ~Smaller(y, x))/y @x (Dodec(x) $ ~Smaller(x, y))@x ((Cube(x) & Medium(x)) $ ~/y BackOf(y, x))@x ((Cube(x) & Medium(x)) $ /y ~BackOf(y, x))
+; Do you understand the difference between 7 and 
+; 8?  They don't mean the same thing.@x ((Cube(x) & ~Large(x)) $ ~/y BackOf(y, x))@x ((Cube(x) & Large(x)) $ /y ~BackOf(y, x))/x (Tet(x) & @y (Cube(y) $ BackOf(y, x)))/x (Tet(x) & @y (BackOf(y, x) $ Cube(y)))/x (Cube(x) & @y (Dodec(y) $ Smaller(y, x)))/x (~Cube(x) & @y (Smaller(y, x) $ Dodec(y)))@x ((Cube(x) & /y LeftOf(x, y)) $ Large(x))@x ((Tet(x) & ~/y FrontOf(x, y)) $ Small(x))@x (~/y BackOf(y, x) $ Cube(x))@x (~/y ~FrontOf(y, x) $ Tet(x))@x (Tet(x) $ /y /z Between(x, y, z))/y @x (Tet(x) $ /z Between(x, y, z))
+; How does this differ from the one above?  They 
+; mean very different things./z @x (Tet(x) $ /y Between(x, y, z))/y /z @x (Tet(x) $ ~Between(x, y, z))
+; Do you see how this can be false, even though 20 
+; and 21 are true?/y @x (Small(x) $ ~SameRow(x, y))@x (Small(x) $ /y (x # y & SameRow(x, y)))@x (Small(x) $ /y (x # y & ~SameCol(x, y)))s=226056;
