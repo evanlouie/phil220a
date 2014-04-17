@@ -1,0 +1,1 @@
+7.1.1.18681wnds:Windows 76.1SntFC1396345978718D1396347809291D1396347847425S106435@x@y((Dodec(x)&Cube(y))$(SameSize(x,y)|Larger(x,y)))@x@y((Cube(x)&Dodec(y)&RightOf(x,y)&~BackOf(x,y))$(SameSize(x,y)|Larger(x,y)))@x@y@z@v((Cube(x)&Cube(y)&Cube(z)&~LeftOf(v,x))$(Between(x,y,z)))@x((Large(x)&Cube(x))$((x=b)|(x=c)))@x(Cube(x)$(Large(x)&((x=b)|(x=c))))s=54570;
